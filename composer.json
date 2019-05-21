@@ -1,0 +1,44 @@
+{
+  "name": "joseph-bing-han/laravel-license-entrust",
+  "description": "Laravel license entrust package",
+  "keywords": [
+    "laravel",
+    "license"
+  ],
+  "type": "composer-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Joseph Han",
+      "email": "joseph.bing.han@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0",
+    "ext-openssl": "*",
+    "composer-plugin-api": "^1.0",
+    "laravel/framework": ">=5.5",
+    "laravelcollective/annotations": "5.5",
+    "laravelcollective/html": "~5.5",
+    "krzysztofmazur/ntp-client": "~1.0"
+  },
+  "autoload": {
+    "files": [
+      "src/Helpers/override.php"
+    ],
+    "classmap": [
+      "src/Commands"
+    ],
+    "psr-4": {
+      "LaravelLicense\\": "src"
+    }
+  },
+  "extra": {
+    "class": "LaravelLicense\\Composer\\Plugin",
+    "laravel": {
+      "providers": [
+        "LaravelLicense\\Provider\\ServiceProvider"
+      ]
+    }
+  }
+}
