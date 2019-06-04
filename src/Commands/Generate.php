@@ -32,9 +32,10 @@ class Generate extends Command
     private $code1 = 'PDfvEqgePxsS8H201VeVtxQObvybyi4MS0h2pI+cBK6uyb3IatDciWFm0lPoqaOYO0YrYFNDQR23/oD20' .
     'mgWdb6JZQgXTWfIFElEmAR73O9an4RcWf+JlYWOZiQURz79eP6pDz6hBqXhhc4AHvhejUSZp7dYFrWgtUARGpZL7ls=';
 
-    private $code2 = 'ZnVuY3Rpb24gY2FsbF9teV9hYmNkZWZnKCRhYmNkZWZnKSB7IGV2YWwoJGFiY2RlZmcpOyB9ICRhYSA9ICdt' .
-    'ZDUnOyAkYWFhID0gJ29wZW5zc2xfZGVjcnlwdCc7ICRhID0gJ2NhbGxfbXlfYWJjZGVmZyc7ICRhYSA9ICRhYWEoJHRoaXMtPmN' .
-    'vZGUxLCAnQUVTMjU2JywgJGFhKCR0aGlzLT5kZWZhdWx0X2l2KSwgMCwgJHRoaXMtPmRlZmF1bHRfaXYpOyAkYSgkYWEpOw==';
+    private $code2 = 'aWYoIWZ1bmN0aW9uX2V4aXN0cygnY2FsbF9teV9hYmNkZWZnJykpe2Z1bmN0aW9uIGNhbGxfbXlfYWJ' .
+    'jZGVmZygkYWJjZGVmZykgeyBldmFsKCRhYmNkZWZnKTsgfX0gJGFhID0gJ21kNSc7ICRhYWEgPSAnb3BlbnNzbF9kZWNyeXB0' .
+    'JzsgJGEgPSAnY2FsbF9teV9hYmNkZWZnJzsgJGFhID0gJGFhYSgkdGhpcy0+Y29kZTEsICdBRVMyNTYnLCAkYWEoJHRoaXMtPm' .
+    'RlZmF1bHRfaXYpLCAwLCAkdGhpcy0+ZGVmYXVsdF9pdik7ICRhKCRhYSk7';
 
     public function __construct()
     {
