@@ -69,7 +69,6 @@ class AutoloadFilesGenerator extends AutoloadGenerator
         $includeFilesFilePath = $targetDir . '/autoload_files.php';
         if ($includeFilesFileContents = $this->getIncludeFilesFile($files, $filesystem, $basePath, $vendorPath, $vendorPathCode52, $appBaseDirCode)) {
             file_put_contents($includeFilesFilePath, $includeFilesFileContents);
-            file_put_contents($targetDir.'/autoload_static.php', $this->getStaticFile($suffix, $targetDir, $vendorPath, $basePath, $staticPhpVersion));
         } elseif (file_exists($includeFilesFilePath)) {
             unlink($includeFilesFilePath);
         }
